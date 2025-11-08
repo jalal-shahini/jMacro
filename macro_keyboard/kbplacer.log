@@ -1,0 +1,188 @@
+INFO: kbplacer_plugin_action.py:70: Plugin version: 0.14
+INFO: kbplacer_plugin_action.py:71: Python version: '3.11.5 (main, Jan 27 2025, 07:08:36) [MSC v.1942 64 bit (AMD64)]'
+INFO: kbplacer_plugin_action.py:72: KiCad version: 9.0.2 with 4.2.2 msw (phoenix) wxWidgets 3.2.6
+INFO: kbplacer_dialog.py:631: Language: en
+INFO: kbplacer_plugin_action.py:80: GUI state: {"layout_path": "E:\\04_temporary\\02_web_downloads\\keyboard-layout(1).json", "key_distance": [19.05, 19.05], "key_info": {"annotation_format": "MX{}", "position_option": "Default", "position": {"x": 0.0, "y": 0.0, "orientation": 0.0, "side": "Front"}, "template_path": ""}, "enable_diode_placement": true, "route_switches_with_diodes": false, "optimize_diodes_orientation": false, "diode_info": {"annotation_format": "D{}", "position_option": "Default", "position": {"x": 5.08, "y": 3.03, "orientation": 90.0, "side": "Back"}, "template_path": ""}, "additional_elements": [{"annotation_format": "ST{}", "position_option": "Custom", "position": {"x": 0.0, "y": 0.0, "orientation": 0.0, "side": "Back"}, "template_path": ""}], "route_rows_and_columns": false, "template_path": "", "generate_outline": false, "outline_delta": 0.0}
+DEBUG: key_placer.py:424: Set key 1U distance: 19050000/19050000
+DEBUG: key_placer.py:141: Switches by nets: defaultdict(<class 'list'>, {frozenset({'C5', 'R5'}): ['MX25'], frozenset({'R5', 'C4'}): ['MX24'], frozenset({'C3', 'R5'}): ['MX23'], frozenset({'R5', 'C2'}): ['MX22'], frozenset({'R5', 'C1'}): ['MX21'], frozenset({'C5', 'R4'}): ['MX20'], frozenset({'C4', 'R4'}): ['MX19'], frozenset({'C3', 'R4'}): ['MX18'], frozenset({'C2', 'R4'}): ['MX17'], frozenset({'C1', 'R4'}): ['MX16'], frozenset({'C5', 'R3'}): ['MX15'], frozenset({'C4', 'R3'}): ['MX14'], frozenset({'C3', 'R3'}): ['MX13'], frozenset({'C2', 'R3'}): ['MX12'], frozenset({'C1', 'R3'}): ['MX11'], frozenset({'C5', 'R2'}): ['MX10'], frozenset({'R2', 'C4'}): ['MX9'], frozenset({'R2', 'C3'}): ['MX8'], frozenset({'R2', 'C2'}): ['MX7'], frozenset({'R2', 'C1'}): ['MX6'], frozenset({'C5', 'R1'}): ['MX5'], frozenset({'C4', 'R1'}): ['MX4'], frozenset({'C3', 'R1'}): ['MX3'], frozenset({'C2', 'R1'}): ['MX2'], frozenset({'C1', 'R1'}): ['MX1']})
+DEBUG: key_placer.py:145: Diodes by switch: {'MX25': ['D25'], 'MX24': ['D24'], 'MX23': ['D23'], 'MX22': ['D22'], 'MX21': ['D21'], 'MX20': ['D20'], 'MX19': ['D19'], 'MX18': ['D18'], 'MX17': ['D17'], 'MX16': ['D16'], 'MX15': ['D15'], 'MX14': ['D14'], 'MX13': ['D13'], 'MX12': ['D12'], 'MX11': ['D11'], 'MX10': ['D10'], 'MX9': ['D9'], 'MX8': ['D8'], 'MX7': ['D7'], 'MX6': ['D6'], 'MX5': ['D5'], 'MX4': ['D4'], 'MX3': ['D3'], 'MX2': ['D2'], 'MX1': ['D1']}
+INFO: kle_serial.py:931: User layout: [[{'c': '#454343', 't': '#ffffff', 'h': 2}, "<i class='fa fa-keyboard-o'></i>\nAll  In", "<i class='fa fa-calculator'></i>\nPS", '/\nC/Call', '*\naTab', '-\npTab'], [{'x': 1}, '7\n130%', '8\n145%', '9\n160%', {'h': 2}, '+\nnTab'], ["<i class='fa fa-step-forward'></i>\n55%", {'sm': 'cherry', 'sb': 'cherry', 'st': 'MX1A-E1xx'}, '4\n70%', {'sm': '', 'sb': '', 'st': ''}, '5\n85%', '6\n100%'], ["<i class='fa fa-step-backward'></i>\n2.5BB", '1\n3BB', '2\n3.5BB', '3\n4BB', {'f': 2, 'h': 2}, 'En\nBet'], ["<i class='fa fa-pause'></i> <i class='fa fa-play'></i>\nFold", '0\nFold A', '00\nCheck', ',\nCall'], [{'t': '#000000', 'a': 7, 'f': 3}, '', '', '']]
+DEBUG: key_placer.py:724: Layout offset: (28575000, 38100000)
+DEBUG: kle_serial.py:990: Layout with: x_ortholinear_keys=25, y_ortholinear_keys=25, rotated_keys=0, encoders=0, iso_enters=0 and unrecognized_shape_keys=0
+DEBUG: kle_serial.py:1015: Layout tagged: [<KeyboardTag.ORTHOLINEAR: 1>]
+DEBUG: board_modifier.py:94: Setting MX1 footprint position: (38100000, 57150000)
+DEBUG: board_modifier.py:94: Setting MX2 footprint position: (57150000, 47625000)
+DEBUG: board_modifier.py:94: Setting MX3 footprint position: (76200000, 47625000)
+DEBUG: board_modifier.py:94: Setting MX4 footprint position: (95250000, 47625000)
+DEBUG: board_modifier.py:94: Setting MX5 footprint position: (114300000, 47625000)
+DEBUG: board_modifier.py:94: Setting MX6 footprint position: (57150000, 66675000)
+DEBUG: board_modifier.py:94: Setting MX7 footprint position: (76200000, 66675000)
+DEBUG: board_modifier.py:94: Setting MX8 footprint position: (95250000, 66675000)
+DEBUG: board_modifier.py:94: Setting MX9 footprint position: (114300000, 76200000)
+DEBUG: board_modifier.py:94: Setting MX10 footprint position: (38100000, 85725000)
+DEBUG: board_modifier.py:94: Setting MX11 footprint position: (57150000, 85725000)
+DEBUG: board_modifier.py:94: Setting MX12 footprint position: (76200000, 85725000)
+DEBUG: board_modifier.py:94: Setting MX13 footprint position: (95250000, 85725000)
+DEBUG: board_modifier.py:94: Setting MX14 footprint position: (38100000, 104775000)
+DEBUG: board_modifier.py:94: Setting MX15 footprint position: (57150000, 104775000)
+DEBUG: board_modifier.py:94: Setting MX16 footprint position: (76200000, 104775000)
+DEBUG: board_modifier.py:94: Setting MX17 footprint position: (95250000, 104775000)
+DEBUG: board_modifier.py:94: Setting MX18 footprint position: (114300000, 114300000)
+DEBUG: board_modifier.py:94: Setting MX19 footprint position: (38100000, 123825000)
+DEBUG: board_modifier.py:94: Setting MX20 footprint position: (57150000, 123825000)
+DEBUG: board_modifier.py:94: Setting MX21 footprint position: (76200000, 123825000)
+DEBUG: board_modifier.py:94: Setting MX22 footprint position: (95250000, 123825000)
+DEBUG: board_modifier.py:94: Setting MX23 footprint position: (38100000, 142875000)
+DEBUG: board_modifier.py:94: Setting MX24 footprint position: (57150000, 142875000)
+DEBUG: board_modifier.py:94: Setting MX25 footprint position: (76200000, 142875000)
+INFO: key_placer.py:1078: Diode info: [ElementInfo(annotation_format='D{}', position_option=<PositionOption.DEFAULT: 'Default'>, position=ElementPosition(x=5.08, y=3.03, orientation=90.0, side=<Side.BACK: 'Back'>), template_path='')]
+DEBUG: board_modifier.py:107: Getting MX1 footprint position: (38100000, 57150000)
+DEBUG: board_modifier.py:94: Setting D1 footprint position: (43180000, 60180000)
+DEBUG: board_modifier.py:107: Getting MX2 footprint position: (57150000, 47625000)
+DEBUG: board_modifier.py:94: Setting D2 footprint position: (62230000, 50655000)
+DEBUG: board_modifier.py:107: Getting MX3 footprint position: (76200000, 47625000)
+DEBUG: board_modifier.py:94: Setting D3 footprint position: (81280000, 50655000)
+DEBUG: board_modifier.py:107: Getting MX4 footprint position: (95250000, 47625000)
+DEBUG: board_modifier.py:94: Setting D4 footprint position: (100330000, 50655000)
+DEBUG: board_modifier.py:107: Getting MX5 footprint position: (114300000, 47625000)
+DEBUG: board_modifier.py:94: Setting D5 footprint position: (119380000, 50655000)
+DEBUG: board_modifier.py:107: Getting MX6 footprint position: (57150000, 66675000)
+DEBUG: board_modifier.py:94: Setting D6 footprint position: (62230000, 69705000)
+DEBUG: board_modifier.py:107: Getting MX7 footprint position: (76200000, 66675000)
+DEBUG: board_modifier.py:94: Setting D7 footprint position: (81280000, 69705000)
+DEBUG: board_modifier.py:107: Getting MX8 footprint position: (95250000, 66675000)
+DEBUG: board_modifier.py:94: Setting D8 footprint position: (100330000, 69705000)
+DEBUG: board_modifier.py:107: Getting MX9 footprint position: (114300000, 76200000)
+DEBUG: board_modifier.py:94: Setting D9 footprint position: (119380000, 79230000)
+DEBUG: board_modifier.py:107: Getting MX10 footprint position: (38100000, 85725000)
+DEBUG: board_modifier.py:94: Setting D10 footprint position: (43180000, 88755000)
+DEBUG: board_modifier.py:107: Getting MX11 footprint position: (57150000, 85725000)
+DEBUG: board_modifier.py:94: Setting D11 footprint position: (62230000, 88755000)
+DEBUG: board_modifier.py:107: Getting MX12 footprint position: (76200000, 85725000)
+DEBUG: board_modifier.py:94: Setting D12 footprint position: (81280000, 88755000)
+DEBUG: board_modifier.py:107: Getting MX13 footprint position: (95250000, 85725000)
+DEBUG: board_modifier.py:94: Setting D13 footprint position: (100330000, 88755000)
+DEBUG: board_modifier.py:107: Getting MX14 footprint position: (38100000, 104775000)
+DEBUG: board_modifier.py:94: Setting D14 footprint position: (43180000, 107805000)
+DEBUG: board_modifier.py:107: Getting MX15 footprint position: (57150000, 104775000)
+DEBUG: board_modifier.py:94: Setting D15 footprint position: (62230000, 107805000)
+DEBUG: board_modifier.py:107: Getting MX16 footprint position: (76200000, 104775000)
+DEBUG: board_modifier.py:94: Setting D16 footprint position: (81280000, 107805000)
+DEBUG: board_modifier.py:107: Getting MX17 footprint position: (95250000, 104775000)
+DEBUG: board_modifier.py:94: Setting D17 footprint position: (100330000, 107805000)
+DEBUG: board_modifier.py:107: Getting MX18 footprint position: (114300000, 114300000)
+DEBUG: board_modifier.py:94: Setting D18 footprint position: (119380000, 117330000)
+DEBUG: board_modifier.py:107: Getting MX19 footprint position: (38100000, 123825000)
+DEBUG: board_modifier.py:94: Setting D19 footprint position: (43180000, 126855000)
+DEBUG: board_modifier.py:107: Getting MX20 footprint position: (57150000, 123825000)
+DEBUG: board_modifier.py:94: Setting D20 footprint position: (62230000, 126855000)
+DEBUG: board_modifier.py:107: Getting MX21 footprint position: (76200000, 123825000)
+DEBUG: board_modifier.py:94: Setting D21 footprint position: (81280000, 126855000)
+DEBUG: board_modifier.py:107: Getting MX22 footprint position: (95250000, 123825000)
+DEBUG: board_modifier.py:94: Setting D22 footprint position: (100330000, 126855000)
+DEBUG: board_modifier.py:107: Getting MX23 footprint position: (38100000, 142875000)
+DEBUG: board_modifier.py:94: Setting D23 footprint position: (43180000, 145905000)
+DEBUG: board_modifier.py:107: Getting MX24 footprint position: (57150000, 142875000)
+DEBUG: board_modifier.py:94: Setting D24 footprint position: (62230000, 145905000)
+DEBUG: board_modifier.py:107: Getting MX25 footprint position: (76200000, 142875000)
+DEBUG: board_modifier.py:94: Setting D25 footprint position: (81280000, 145905000)
+DEBUG: key_placer.py:854: Placing additional elements for MX25
+DEBUG: board_modifier.py:107: Getting MX25 footprint position: (76200000, 142875000)
+DEBUG: board_modifier.py:84: Searching for optional ST25 footprint in E:\01_personal\01_areas\04_hobbys\02_electronics_and_programming\04_macro_keyboard\macro_keyboard\macro_keyboard.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+DEBUG: key_placer.py:854: Placing additional elements for MX24
+DEBUG: board_modifier.py:107: Getting MX24 footprint position: (57150000, 142875000)
+DEBUG: board_modifier.py:84: Searching for optional ST24 footprint in E:\01_personal\01_areas\04_hobbys\02_electronics_and_programming\04_macro_keyboard\macro_keyboard\macro_keyboard.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+DEBUG: key_placer.py:854: Placing additional elements for MX23
+DEBUG: board_modifier.py:107: Getting MX23 footprint position: (38100000, 142875000)
+DEBUG: board_modifier.py:84: Searching for optional ST23 footprint in E:\01_personal\01_areas\04_hobbys\02_electronics_and_programming\04_macro_keyboard\macro_keyboard\macro_keyboard.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+DEBUG: key_placer.py:854: Placing additional elements for MX22
+DEBUG: board_modifier.py:107: Getting MX22 footprint position: (95250000, 123825000)
+DEBUG: board_modifier.py:84: Searching for optional ST22 footprint in E:\01_personal\01_areas\04_hobbys\02_electronics_and_programming\04_macro_keyboard\macro_keyboard\macro_keyboard.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+DEBUG: key_placer.py:854: Placing additional elements for MX21
+DEBUG: board_modifier.py:107: Getting MX21 footprint position: (76200000, 123825000)
+DEBUG: board_modifier.py:84: Searching for optional ST21 footprint in E:\01_personal\01_areas\04_hobbys\02_electronics_and_programming\04_macro_keyboard\macro_keyboard\macro_keyboard.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+DEBUG: key_placer.py:854: Placing additional elements for MX20
+DEBUG: board_modifier.py:107: Getting MX20 footprint position: (57150000, 123825000)
+DEBUG: board_modifier.py:84: Searching for optional ST20 footprint in E:\01_personal\01_areas\04_hobbys\02_electronics_and_programming\04_macro_keyboard\macro_keyboard\macro_keyboard.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+DEBUG: key_placer.py:854: Placing additional elements for MX19
+DEBUG: board_modifier.py:107: Getting MX19 footprint position: (38100000, 123825000)
+DEBUG: board_modifier.py:84: Searching for optional ST19 footprint in E:\01_personal\01_areas\04_hobbys\02_electronics_and_programming\04_macro_keyboard\macro_keyboard\macro_keyboard.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+DEBUG: key_placer.py:854: Placing additional elements for MX18
+DEBUG: board_modifier.py:107: Getting MX18 footprint position: (114300000, 114300000)
+DEBUG: board_modifier.py:84: Searching for optional ST18 footprint in E:\01_personal\01_areas\04_hobbys\02_electronics_and_programming\04_macro_keyboard\macro_keyboard\macro_keyboard.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+DEBUG: key_placer.py:854: Placing additional elements for MX17
+DEBUG: board_modifier.py:107: Getting MX17 footprint position: (95250000, 104775000)
+DEBUG: board_modifier.py:84: Searching for optional ST17 footprint in E:\01_personal\01_areas\04_hobbys\02_electronics_and_programming\04_macro_keyboard\macro_keyboard\macro_keyboard.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+DEBUG: key_placer.py:854: Placing additional elements for MX16
+DEBUG: board_modifier.py:107: Getting MX16 footprint position: (76200000, 104775000)
+DEBUG: board_modifier.py:84: Searching for optional ST16 footprint in E:\01_personal\01_areas\04_hobbys\02_electronics_and_programming\04_macro_keyboard\macro_keyboard\macro_keyboard.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+DEBUG: key_placer.py:854: Placing additional elements for MX15
+DEBUG: board_modifier.py:107: Getting MX15 footprint position: (57150000, 104775000)
+DEBUG: board_modifier.py:84: Searching for optional ST15 footprint in E:\01_personal\01_areas\04_hobbys\02_electronics_and_programming\04_macro_keyboard\macro_keyboard\macro_keyboard.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+DEBUG: key_placer.py:854: Placing additional elements for MX14
+DEBUG: board_modifier.py:107: Getting MX14 footprint position: (38100000, 104775000)
+DEBUG: board_modifier.py:84: Searching for optional ST14 footprint in E:\01_personal\01_areas\04_hobbys\02_electronics_and_programming\04_macro_keyboard\macro_keyboard\macro_keyboard.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+DEBUG: key_placer.py:854: Placing additional elements for MX13
+DEBUG: board_modifier.py:107: Getting MX13 footprint position: (95250000, 85725000)
+DEBUG: board_modifier.py:84: Searching for optional ST13 footprint in E:\01_personal\01_areas\04_hobbys\02_electronics_and_programming\04_macro_keyboard\macro_keyboard\macro_keyboard.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+DEBUG: key_placer.py:854: Placing additional elements for MX12
+DEBUG: board_modifier.py:107: Getting MX12 footprint position: (76200000, 85725000)
+DEBUG: board_modifier.py:84: Searching for optional ST12 footprint in E:\01_personal\01_areas\04_hobbys\02_electronics_and_programming\04_macro_keyboard\macro_keyboard\macro_keyboard.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+DEBUG: key_placer.py:854: Placing additional elements for MX11
+DEBUG: board_modifier.py:107: Getting MX11 footprint position: (57150000, 85725000)
+DEBUG: board_modifier.py:84: Searching for optional ST11 footprint in E:\01_personal\01_areas\04_hobbys\02_electronics_and_programming\04_macro_keyboard\macro_keyboard\macro_keyboard.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+DEBUG: key_placer.py:854: Placing additional elements for MX10
+DEBUG: board_modifier.py:107: Getting MX10 footprint position: (38100000, 85725000)
+DEBUG: board_modifier.py:84: Searching for optional ST10 footprint in E:\01_personal\01_areas\04_hobbys\02_electronics_and_programming\04_macro_keyboard\macro_keyboard\macro_keyboard.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+DEBUG: key_placer.py:854: Placing additional elements for MX9
+DEBUG: board_modifier.py:107: Getting MX9 footprint position: (114300000, 76200000)
+DEBUG: board_modifier.py:84: Searching for optional ST9 footprint in E:\01_personal\01_areas\04_hobbys\02_electronics_and_programming\04_macro_keyboard\macro_keyboard\macro_keyboard.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+DEBUG: key_placer.py:854: Placing additional elements for MX8
+DEBUG: board_modifier.py:107: Getting MX8 footprint position: (95250000, 66675000)
+DEBUG: board_modifier.py:84: Searching for optional ST8 footprint in E:\01_personal\01_areas\04_hobbys\02_electronics_and_programming\04_macro_keyboard\macro_keyboard\macro_keyboard.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+DEBUG: key_placer.py:854: Placing additional elements for MX7
+DEBUG: board_modifier.py:107: Getting MX7 footprint position: (76200000, 66675000)
+DEBUG: board_modifier.py:84: Searching for optional ST7 footprint in E:\01_personal\01_areas\04_hobbys\02_electronics_and_programming\04_macro_keyboard\macro_keyboard\macro_keyboard.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+DEBUG: key_placer.py:854: Placing additional elements for MX6
+DEBUG: board_modifier.py:107: Getting MX6 footprint position: (57150000, 66675000)
+DEBUG: board_modifier.py:84: Searching for optional ST6 footprint in E:\01_personal\01_areas\04_hobbys\02_electronics_and_programming\04_macro_keyboard\macro_keyboard\macro_keyboard.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+DEBUG: key_placer.py:854: Placing additional elements for MX5
+DEBUG: board_modifier.py:107: Getting MX5 footprint position: (114300000, 47625000)
+DEBUG: board_modifier.py:84: Searching for optional ST5 footprint in E:\01_personal\01_areas\04_hobbys\02_electronics_and_programming\04_macro_keyboard\macro_keyboard\macro_keyboard.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+DEBUG: key_placer.py:854: Placing additional elements for MX4
+DEBUG: board_modifier.py:107: Getting MX4 footprint position: (95250000, 47625000)
+DEBUG: board_modifier.py:84: Searching for optional ST4 footprint in E:\01_personal\01_areas\04_hobbys\02_electronics_and_programming\04_macro_keyboard\macro_keyboard\macro_keyboard.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+DEBUG: key_placer.py:854: Placing additional elements for MX3
+DEBUG: board_modifier.py:107: Getting MX3 footprint position: (76200000, 47625000)
+DEBUG: board_modifier.py:84: Searching for optional ST3 footprint in E:\01_personal\01_areas\04_hobbys\02_electronics_and_programming\04_macro_keyboard\macro_keyboard\macro_keyboard.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+DEBUG: key_placer.py:854: Placing additional elements for MX2
+DEBUG: board_modifier.py:107: Getting MX2 footprint position: (57150000, 47625000)
+DEBUG: board_modifier.py:84: Searching for optional ST2 footprint in E:\01_personal\01_areas\04_hobbys\02_electronics_and_programming\04_macro_keyboard\macro_keyboard\macro_keyboard.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+DEBUG: key_placer.py:854: Placing additional elements for MX1
+DEBUG: board_modifier.py:107: Getting MX1 footprint position: (38100000, 57150000)
+DEBUG: board_modifier.py:84: Searching for optional ST1 footprint in E:\01_personal\01_areas\04_hobbys\02_electronics_and_programming\04_macro_keyboard\macro_keyboard\macro_keyboard.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
