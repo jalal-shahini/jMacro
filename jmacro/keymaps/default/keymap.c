@@ -92,17 +92,56 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     )
 };
 
-// Encoder behavior: encoder 0 = volume, encoder 1 = PgUp/PgDn
 bool encoder_update_user(uint8_t index, bool clockwise) {
+    // Encoder 0: always volume up/down
     if (index == 0) {
-        if (clockwise) tap_code(KC_AUDIO_VOL_UP);
-        else tap_code(KC_AUDIO_VOL_DOWN);
-    } else if (index == 1) {
-        if (clockwise) tap_code(MS_WHLD);
-        else tap_code(MS_WHLU);
+        if (clockwise) {
+            tap_code(KC_AUDIO_VOL_UP);
+        } else {
+            tap_code(KC_AUDIO_VOL_DOWN);
+        }
     }
+    // Encoder 1: changes function by layer
+    else if (index == 1) {
+        switch (get_highest_layer(layer_state)) {
+            case _BASE: // Layer 0 → mouse wheel up/down
+                if (clockwise) {
+                    tap_code(MS_WHLD);
+                } else {
+                    tap_code(MS_WHLU);
+                }
+                break;
+
+            case _LAYER1: // Layer 1 → mouse wheel up/down
+                if (clockwise) {
+                    tap_code(MS_WHLD);
+                } else {
+                    tap_code(MS_WHLU);
+                }
+                break;
+
+            case _LAYER2: // Layer 2 → same as layer 1
+                if (clockwise) {
+                    tap_code(KC_RGHT);
+                } else {
+                    tap_code(KC_LEFT);
+                }
+                break;
+
+            default:
+                // Fallback if you're on some other layer
+                if (clockwise) {
+                    tap_code(KC_RGHT);
+                } else {
+                    tap_code(KC_LEFT);
+                }
+                break;
+        }
+    }
+
     return false;
 }
+
 
 // RGB LED pins
 #define RED_PIN   D6
